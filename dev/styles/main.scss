@@ -1,6 +1,12 @@
 @import 'setup';
+@import 'sidebar';
+@import 'hero';
+@import 'skillsAndTools';
+@import 'works';
+@import 'contact';
 
+//contains the entire page
 .container {
-	max-width: 900px;
+	max-width: 1440px;
 	margin: 0 auto;
 }
