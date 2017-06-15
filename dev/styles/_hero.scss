@@ -1,0 +1,31 @@
+#hero-page {
+    height: 100vh;
+    width: 86%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/pexels-photo-119685.jpeg);
+    background-size: cover;
+}
+.hero-page__text {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.hero-page__buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  button {
+    border-radius: 4px;
+    width: 140px;
+    height: 38px;
+    margin: 10px 10px;
+    background-color: rgba(231, 190, 3, 0.9);
+    border: none;
+    color: white;
+    font-size: 10px;
+  }
+}

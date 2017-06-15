@@ -1,0 +1,29 @@
+#works {
+    height: 100vh;
+    width: calc(86%);
+    margin-left: auto;
+    display: flex;
+    background-color:  #f7f7f7;
+}
+
+.works-page {
+  width: 100%;
+}
+
+.works-page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+  margin-top: 62px;
+  margin-bottom: 20px;   
+  }
+}
+
+
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
+}
