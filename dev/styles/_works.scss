@@ -5,11 +5,9 @@
     display: flex;
     background-color:  #f7f7f7;
 }
-
 .works-page {
   width: 100%;
 }
-
 .works-page__header {
   display: flex;
   flex-direction: column;
@@ -19,11 +17,26 @@
   margin-bottom: 20px;   
   }
 }
+.works-page__example {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 72px;
+  img {
+    height: 331px;
+    width: 44%;
+  }
+}
 
+.works-page__example-information {
+  line-height: 24px;
+  width: 35%;
+}
 
 
 .carousel-cell {
   width: 100%; /* full width */
-  height: 160px; /* height of carousel */
+  height: 80%; /* height of carousel */
   margin-right: 10px;
 }
