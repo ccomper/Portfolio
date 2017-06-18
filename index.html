@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
@@ -15,26 +16,30 @@
         <!-- sidebar -->
         <header id="sidebar">
             <div class="sidebar-top__logo">
-                <img src="../../assets/circles.png" alt="small yellow logo circular pattern">
+                <img src="assets/circles (1).svg" alt="small yellow logo circular pattern">
                 <h5>Chris<br>Comper</h5>
             </div>
             <div class="sidebar-top__list">
                 <ul class="sidebar-top__listItems">
-                    <li><a data-scroll href="#sidebar">Home</a></li>
-                    <li><a data-scroll href="#skills">Skills</a></li>
-                    <li><a data-scroll href="#works">Work</a></li>
-                    <li><a data-scroll href="#contact">Contact</a></li>
+                    <li><a data-scroll href="#sidebar">HOME</a></li>
+                    <li><a data-scroll href="#about">ABOUT</a></li>
+                    <li><a data-scroll href="#skills">SKILLS</a></li>
+                    <li><a data-scroll href="#works">WORK</a></li>
+                    <li><a data-scroll href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <div class="sidebar-bottom__icons">
                 <a href="https://twitter.com/chriscomper">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a href="https://github.com/ccomper">
-                    <i class="fa fa-github"></i>
+                    <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/chris-comper-07bb6a13b/">
-                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://medium.com/@chrisdevelops90">
+                    <i class="fa fa-medium" aria-hidden="true"></i>
                 </a>   
             </div>
         </header>   
@@ -45,28 +50,43 @@
                 <h1>Hello, my name is Chris Comper</h1>    
                 <h5>I'm a Front-End Developer. I live and work in Toronto, Canada.</h5>
                  <div class="hero-page__buttons">
-                     <button href="#contact">HIRE ME</button>
-                     <button href="#works">VIEW WORKS</button>
+                     <a data-scroll href="#contact"><p>HIRE ME</p></a>
+                     <a data-scroll href="#works"><p>VIEW WORKS</p></a>
                  </div>        
             </div>
         </section>
         <!-- end of hero -->
+        <section id="about">
+            <div class="about-page">
+                <div class="about-page__header">
+                    <h2>About</h2>    
+                    <img src="assets/divider.svg" alt="small circles under the header text">
+                </div>
+                <div class="about-page__biography">
+                    <h4>Who Am I</h4>
+                    <p>My name is Chris, and I'm a Front-End Web Developer based in Toronto, Canada. I love working with hard working teams looking to contribute to something greater than what can be accomplished alone. </p>  
+                    <p> I’m passionate and focused on becoming a better overall Developer, specifically in JavaScript, React, structural patters and utilizing deep learning to enhance the applications I work on.</p>
+                    <p>When I'm not coding or brushing up on new web technologies, you can find me rock climbing or spending time with my dog.</p>  
+                </div>
+            </div>
+        </section>
+
         <!-- skills -->
         <section id="skills">
             <div class="skills-page">
                 <div class="skills-page__header">
                     <h2>Tools and Skills</h2>
-                    <img src="assets/divider.png" alt="small circles under the header text">
+                    <img src="assets/divider.svg" alt="small circles under the header text">
                 </div>
                 <div class="skills-page__icons">
-                    <i class="devicon-html5-plain-wordmark"></i>
-                    <i class="devicon-css3-plain-wordmark"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-sass-original"></i>
-                    <i class="devicon-react-original-wordmark"></i>
-                    <i class="devicon-git-plain-wordmark"></i>
-                    <i class="devicon-jquery-plain-wordmark"></i>
-                    <i class="devicon-gulp-plain"></i>
+                    <i class="devicon-html5-plain-wordmark"><p>HTML5</p></i>
+                    <i class="devicon-css3-plain-wordmark"><p>CSS3</p></i>
+                    <i class="devicon-javascript-plain"><p>JavaScript</p></i>
+                    <i class="devicon-sass-original"><p>SASS</p></i>
+                    <i class="devicon-react-original-wordmark"><p>React</p></i>
+                    <i class="devicon-git-plain-wordmark"><p>Git</p></i>
+                    <i class="devicon-jquery-plain-wordmark"><p>jQuery</p></i>
+                    <i class="devicon-gulp-plain"><p>Gulp</p></i>
                 </div>
             </div>    
         </section>
@@ -77,9 +97,9 @@
             <div class="works-page">
                 <div class="works-page__header">
                     <h2>Works</h2>
-                    <img src="assets/divider.png" alt="small circles under the header text">
+                    <img src="assets/divider.svg" alt="small circles under the header text">
                 </div>
-                <div data-flickity>
+                <div data-flickity='{ "wrapAround": true }'>
                     <!-- first work example -->
                     <div class="works-page__example main-carousel">
                         <img src="http://unsplash.it/200/200" alt="" class="works-page__exampleImage">
@@ -119,20 +139,22 @@
         <section id="contact">
             <div class="contact-page__header">    
                 <h2>Contact</h2>
-                <img src="assets/divider.png" alt="small circles under the header text">
+                <img src="assets/divider.svg" alt="small circles under the header text">
             </div>
-            <div class="contact-page__emailInfo">
-                <h4>christophercomper.dev@gmail.com</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta rem perspiciatis, reiciendis, reprehenderit aut commodi beatae ratione ab illo, optio dolor hic fugiat. Dolor at ducimus in veritatis, quae!</p>
-            </div>
-            <div class="contact-page__form">
-                <h3>Enjoy my work? Hire me!</h3>
-                <form method="POST" action="http://www.focuspocus.io/magic/c07a0b0b8c746da776ef673f447f59c6">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="email address">
-                    <textarea name="textarea" placeholder="Enter message" ></textarea>
-                    <input type="submit">
-                </form>
+            <div class="contact-page__mainContent">
+                <div class="contact-page__emailInfo">
+                    <h4>christophercomper.dev@gmail.com</h4>
+                    <p>I want to live in a world where we work toward building a more open, accessible internet. Also, a world where it sometimes rains sour jube jubes.</p>
+                </div>
+                <div class="contact-page__form">
+                    <h3>Enjoy my work? Hire me!</h3>
+                    <form method="POST" action="http://www.focuspocus.io/magic/c07a0b0b8c746da776ef673f447f59c6">
+                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="email address">
+                        <textarea name="textarea" placeholder="your message" ></textarea>
+                        <input class="form-submit__button" type="submit">
+                    </form>
+                </div>
             </div>
         </section>
     </div>

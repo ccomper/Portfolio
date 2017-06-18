@@ -5,7 +5,7 @@
     align-items: center;  
     top: 0;
     bottom: 0;
-    background-color: rgba(34,34,34, 0.95);
+    background-color: rgba(34,34,34, 1);
     width: 14%;
     position: fixed;
 }
@@ -16,21 +16,30 @@ ul.sidebar-top__listItems {
     letter-spacing: 0.1em;
     color: #999999;
     li {
-      a {
+        a {
         text-decoration: none;
         color: #999999;
+        font-size: 12px;
+        transition: 0.7s;
+        }
+        a:hover {
+            color: white;
+        }
       }
-    }
 }
 .sidebar-bottom__icons {
     i {
-    font-size: 14px;  
-    text-decoration: none;
-    color: #999999;
-    margin-bottom: 15px; 
+        font-size: 20px;  
+        text-decoration: none;
+        color: #999999;
+        margin-bottom: 15px; 
+        transition: 0.7s;
     }
     a {
-    text-decoration: none;
+        text-decoration: none;
+    }
+    i:hover {
+        color:white;
     }
 }
 .sidebar-top__logo {
@@ -39,12 +48,65 @@ ul.sidebar-top__listItems {
     align-items: center;
     margin-top: 15px;
     img {
-    height: 50px;
-    padding-right: 10px;
+        height: 50px;
+        padding-right: 10px;
     }
     h5 {
-    font-family: 'Roboto Slab', serif;
-    color: #999999; 
-    margin: 0;
+        font-family: 'Roboto Slab', serif;
+        color: #999999; 
+        margin: 0;
     } 
+}
+
+/* Large screen tweaks */
+@media (max-width: 1200px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 900px) {
+    #sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 14%; 
+        z-index: 5;
+        position: fixed;
+        bottom: 0;
+        top: 86%;
+        justify-content: space-around;
+    }
+    ul.sidebar-top__listItems {
+            display: flex;
+            line-height: 0;
+        li {
+            margin: 0 10px;
+                a {            
+                font-size: 14px;
+            }
+        }
+    }
+    .sidebar-top__logo {
+        display: flex;
+        margin-top: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        h5 {
+            display: none;
+        }
+    }
+    .sidebar-bottom__icons a i {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .sidebar-top__logo {
+        display: none;
+    }
+    ul.sidebar-top__listItems li a {
+        font-size: 10px;
+    }
 }

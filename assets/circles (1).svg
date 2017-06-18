@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="41px" height="41px" viewBox="0 0 41 41">
+<filter filterUnits="objectBoundingBox" x="-14.81" y="-14.81" width="129.63" height="129.63" id="filter0">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.00" result="dsBlurOut1"/>
+<feFlood flood-color="rgb(0,0,0)" flood-opacity="0.20" result="dsFloodOut1"/>
+<feComposite in="dsFloodOut1" in2="dsBlurOut1" operator="in" result="dsShadow1"/>
+<feOffset in="dsShadow1" dx="0.50" dy="0.87" result="dsOffset1"/>
+<feComposite in="dsOffset1" in2="SourceAlpha" operator="out" result="dropShadow1"/>
+<feBlend in="dropShadow1" in2="SourceGraphic" mode="normal" result="sourceGraphic"/>
+</filter>
+<filter filterUnits="objectBoundingBox" x="-23.53" y="-23.53" width="147.06" height="147.06" id="filter1">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.00" result="dsBlurOut1"/>
+<feFlood flood-color="rgb(0,0,0)" flood-opacity="0.20" result="dsFloodOut1"/>
+<feComposite in="dsFloodOut1" in2="dsBlurOut1" operator="in" result="dsShadow1"/>
+<feOffset in="dsShadow1" dx="0.50" dy="0.87" result="dsOffset1"/>
+<feComposite in="dsOffset1" in2="SourceAlpha" operator="out" result="dropShadow1"/>
+<feBlend in="dropShadow1" in2="SourceGraphic" mode="normal" result="sourceGraphic"/>
+</filter>
+<g><circle cx="20.00" cy="21.00" r="20.00" fill="rgb(233,191,3)" opacity="0.65"/><circle cx="25.50" cy="24.50" r="13.50" fill="rgb(233,191,3)" opacity="0.65" filter="url(#filter0)"/><circle cx="29.50" cy="27.50" r="8.50" fill="rgb(233,191,3)" opacity="0.90" filter="url(#filter1)"/></g></svg>
