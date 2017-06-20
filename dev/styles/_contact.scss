@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   .contact-page__emailInfo {
-    width: 350px;
+    width: 40%;
     text-align: center;
     margin-right: 40px;
     display: flex;
@@ -28,10 +28,10 @@
     justify-content: center;
   }
   .contact-page__form {
-    width: 350px;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
+    width: 40%;
     h3 {
       text-align: center;
     }
@@ -58,7 +58,7 @@
       input[type="submit"] {
         background-color: rgba(231, 190, 3, 0.9);
         color: white;
-        font-size: 10px;
+        font-size: 16px;
         border-radius: 4px;
         height: 38px;
         border: none;
@@ -95,24 +95,33 @@
     .contact-page__emailInfo {
       margin-right: 0;
     }
+    h4 {
+      display: none;
+    }
+    p {
+      display: none;
+    }
     .contact-page__form {
       margin-left: 0;
+      width: 80%;
       form {
         textarea {
-          height: 80px;
+          height: 160px;
         }
       }
     }
-    }
+  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .contact-page__mainContent {
-      .contact-page__emailInfo {
-        form {
-        width: 50%;
-      }
-    }
+  .sidebar-bottom__icons a i {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width : 380px) { 
+  .contact-page__form form {
+    margin: 0;
   }
 }

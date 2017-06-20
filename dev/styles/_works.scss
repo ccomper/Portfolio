@@ -1,5 +1,5 @@
 #works {
-    height: 100vh;
+    min-height: 100vh;
     width: 86%;
     margin-left: auto;
     display: flex;
@@ -24,20 +24,46 @@
   justify-content: space-around;
   width: 100%;
   margin-top: 50px;
-  img {
-    height: 331px;
-    width: 44%;
+}
+.works-page__exampleImage {
+  padding: 10px;
+  width: 50%;
+  img {  
     border-radius: 4px;
+    width: 100%;
   }
 }
 .works-page__example-information {
+  padding: 10px;
   line-height: 24px;
-  width: 35%;
+  width: 50%;
+  margin-right: 10px;
+  p {
+    padding-right: 50px;
+  }
+}
+  .works-page__exampleButton {
+    border-radius: 4px;
+    width: 142px;
+    height: 40px;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: rgba(231, 190, 3, 0.9);
+    border: none;
+    color: white;
+    font-size: 12px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+a.works-page__exampleButton:hover {
+      background-color: black;
+    }
+.flickity-viewport {
+  height: 500px;
 }
 .flickity-page-dots .dot {
   display: none;
 }
-
 .flickity-prev-next-button.previous {
   display: none;
 }
@@ -59,25 +85,19 @@
   .works-page__example {
     display: flex;
     flex-direction: column;
-    // margin-top: 50px; 
-    img {
-      height: auto;
-      width: auto;
-    }
   }  
   .works-page__example-information {
     width: auto;
     text-align: center;
+    p {
+      padding-right: 0;
+    }
   }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .works-page__example {
-    
-    img {
-      height: 200px;
-      width: 200px;
-    }
+    margin-top: 10px;
   }
 }

@@ -3,7 +3,7 @@
 		width: 86%;
 		margin-left: auto;
 		display: flex;
-		background-color:  white;
+		background-color:  #f7f7f7;
 }
 
 .skills-page {
@@ -63,5 +63,8 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	.skills-page__icons {
+		margin-top: 10px;
+	}
 
 }

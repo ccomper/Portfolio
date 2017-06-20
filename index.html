@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Expires" content="30" />
 	<title>Welcome!</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/android-icon-192x192.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
@@ -63,9 +67,9 @@
                     <img src="assets/divider.svg" alt="small circles under the header text">
                 </div>
                 <div class="about-page__biography">
-                    <h4>Who Am I</h4>
-                    <p>My name is Chris, and I'm a Front-End Web Developer based in Toronto, Canada. I love working with hard working teams looking to contribute to something greater than what can be accomplished alone. </p>  
-                    <p> I’m passionate and focused on becoming a better overall Developer, specifically in JavaScript, React, structural patters and utilizing deep learning to enhance the applications I work on.</p>
+                    <h4>Thanks for visiting my site!</h4>
+                    <p>My name is Chris, and I'm a Front-End Web Developer based in Toronto, Canada. I love to collaborate with teams and work hard to ship something greater than what can be accomplished alone. </p>  
+                    <p>I believe in a directed, continuous, focused approach to learning. I'm currently learning Node, and working hard to expand my abilities and passion to create more robust applications in React.</p>
                     <p>When I'm not coding or brushing up on new web technologies, you can find me rock climbing or spending time with my dog.</p>  
                 </div>
             </div>
@@ -102,35 +106,55 @@
                 <div data-flickity='{ "wrapAround": true }'>
                     <!-- first work example -->
                     <div class="works-page__example main-carousel">
-                        <img src="http://unsplash.it/200/200" alt="" class="works-page__exampleImage">
+                        <div class="works-page__exampleImage">
+                            <img src="assets/disasters.jpg">
+                        </div>
                         <div class="works-page__example-information">
-                            <h4>Title of example</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aliquid, repellendus. Iusto modi illum non deserunt error quis, atque odit repellendus, iste, dolorum dolores tenetur ab sed hic vero. Possimus.</p>    
+                            <h4>API Project: Disaster Tracker</h4>
+                            <p>Built using the EONET API and jQuery from the team at NASA. Tracks natural disasters worldwide live.</p>   
+                            <h5>jQuery - AJAX - CSS3 - HTML5</h5>
+                            <a href="http://www.disaster-tracker.com" target="_blank" class="works-page__exampleButton">VIEW LIVE</a>
+                            <a href="www.github.com" target="_blank" class="works-page__exampleButton">GITHUB</a> 
                         </div>   
                     </div>
                     <!-- second work example -->
                     <div class="works-page__example carousel-cell">
-                        <img src="http://unsplash.it/200/200" alt="" class="works-page__exampleImage">
+                         <div class="works-page__exampleImage">
+                            <img src="assets/pawprints.jpg">
+                        </div>
                         <div class="works-page__example-information">
-                            <h4>Title of example</h4> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vel magnam vero veritatis quibusdam iste optio corporis veniam fugit saepe quia adipisci architecto reprehenderit exercitationem itaque, deleniti dicta accusantium inventore.</p>   
+                            <h4>React/Firebase Project: PawPrints</h4>
+                            <p>Built using React and Firebase. Features authentication, profile creation, routing, and public/private areas.</p>   
+                            <h5>React - Firebase - SASS - Gulp</h5>
+                            <a href="www.followthepawprints.com" target="_blank" class="works-page__exampleButton">VIEW LIVE</a>
+                            <a href="www.github.com" target="_blank" class="works-page__exampleButton">GITHUB</a> 
                         </div> 
                     </div>
                     <!-- third work example -->
                     <div class="works-page__example carousel-cell">
-                        <img src="http://unsplash.it/200/200" alt="" class="works-page__exampleImage">
+                         <div class="works-page__exampleImage">
+                            <img src="assets/Screen_Shot_2017-06-19_at_4_59_08_PM.jpg">
+                        </div>
                         <div class="works-page__example-information">
-                            <h4>Title of example</h4> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tenetur maxime, cum dolore? Quasi itaque delectus necessitatibus earum iusto neque suscipit deleniti mollitia eveniet laboriosam vero quam ex, dolore ea!</p>   
-                        </div>     
+                            <h4>jQuery Project: Prophesize-me</h4>
+                            <p>Built using jQuery, CSS3 and HTML5. Allows users to select several choices and randomly generate thousands of different combinations. Includes theme songs!</p>   
+                            <h5>jQuery - CSS3 - HTML5</h5>
+                            <a href="www.google.ca" target="_blank" class="works-page__exampleButton">VIEW LIVE</a>
+                            <a href="www.github.com" target="_blank" class="works-page__exampleButton">GITHUB</a> 
+                        </div>   
                     </div>
                     <!-- fourth work example -->
                     <div class="works-page__example carousel-cell">
-                        <img src="http://unsplash.it/200/200" alt="" class="works-page__exampleImage">
+                         <div class="works-page__exampleImage">
+                            <img src="assets/PSD.jpg">
+                        </div>
                         <div class="works-page__example-information">
-                            <h4>Title of example</h4> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tenetur maxime, cum dolore? Quasi itaque delectus necessitatibus earum iusto neque suscipit deleniti mollitia eveniet laboriosam vero quam ex, dolore ea!</p>   
-                        </div>     
+                            <h4>PSD Conversion: Over</h4>
+                            <p>PSD template conversion exemplifying responsive design.</p>   
+                            <h5>HTML5, CSS3</h5>
+                            <a href="www.google.ca" target="_blank" class="works-page__exampleButton">VIEW LIVE</a>
+                            <a href="www.github.com" target="_blank" class="works-page__exampleButton">GITHUB</a> 
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -143,8 +167,9 @@
             </div>
             <div class="contact-page__mainContent">
                 <div class="contact-page__emailInfo">
-                    <h4>christophercomper.dev@gmail.com</h4>
+                    <h4>hello@chriscomper.com</h4>
                     <p>I want to live in a world where we work toward building a more open, accessible internet. Also, a world where it sometimes rains sour jube jubes.</p>
+                    <p>If you feel the same way about either of the above, let me know!</p>
                 </div>
                 <div class="contact-page__form">
                     <h3>Enjoy my work? Hire me!</h3>
@@ -158,12 +183,12 @@
             </div>
         </section>
     </div>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="public/scripts/smooth-scroll.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="public/scripts/smooth-scroll.js"></script>
 <script src="public/scripts/main.js"></script>
 <script>
     smoothScroll.init({

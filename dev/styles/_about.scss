@@ -1,9 +1,9 @@
 #about {
-    height: 100vh;
+    min-height: 100vh;
     width: 86%;
     margin-left: auto;
     display: flex;
-    background-color:  #f7f7f7;
+    background-color:  white;
 }
 .about-page {
     width: 100%;
@@ -21,18 +21,35 @@
 }
 .about-page__biography {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    width: 75%;
+    padding: 0 50px;
+    width: 70%;
+    height: 60%;
+    p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 900px) {
     #about {
         width: 100%;
     }
+    .about-page__header {
+        h2 {
+            margin-top: 10px;
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  #about {
+    height: 100%;
+  }
+  .about-page__biography {
+        padding: 0 10px;    
+  }
   
 }

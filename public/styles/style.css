@@ -268,7 +268,15 @@ ul.sidebar-top__listItems {
     font-size: 25px; } }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 520px) {
+  #sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .sidebar-top__logo {
     display: none; }
   ul.sidebar-top__listItems li a {
@@ -287,7 +295,7 @@ ul.sidebar-top__listItems {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../assets/pexels-photo-119685.jpeg);
+  background-image: url(../../assets/wil-stewart-143331.jpg);
   background-size: cover; }
 
 .hero-page__text {
@@ -364,7 +372,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white; }
+  background-color: #f7f7f7; }
 
 .skills-page {
   width: 100%;
@@ -440,8 +448,12 @@ a:hover {
     text-align: center; } }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .skills-page__icons {
+    margin-top: 10px; } }
+
 #works {
-  height: 100vh;
+  min-height: 100vh;
   width: 86%;
   margin-left: auto;
   display: -webkit-box;
@@ -482,14 +494,41 @@ a:hover {
       justify-content: space-around;
   width: 100%;
   margin-top: 50px; }
-  .works-page__example img {
-    height: 331px;
-    width: 44%;
-    border-radius: 4px; }
+
+.works-page__exampleImage {
+  padding: 10px;
+  width: 50%; }
+  .works-page__exampleImage img {
+    border-radius: 4px;
+    width: 100%; }
 
 .works-page__example-information {
+  padding: 10px;
   line-height: 24px;
-  width: 35%; }
+  width: 50%;
+  margin-right: 10px; }
+  .works-page__example-information p {
+    padding-right: 50px; }
+
+.works-page__exampleButton {
+  border-radius: 4px;
+  width: 142px;
+  height: 40px;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: rgba(231, 190, 3, 0.9);
+  border: none;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  text-decoration: none; }
+
+a.works-page__exampleButton:hover {
+  background-color: black; }
+
+.flickity-viewport {
+  height: 500px; }
 
 .flickity-page-dots .dot {
   display: none; }
@@ -515,27 +554,25 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .works-page__example img {
-      height: auto;
-      width: auto; }
   .works-page__example-information {
     width: auto;
-    text-align: center; } }
+    text-align: center; }
+    .works-page__example-information p {
+      padding-right: 0; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .works-page__example img {
-    height: 200px;
-    width: 200px; } }
+  .works-page__example {
+    margin-top: 10px; } }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
   width: 86%;
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f7f7f7; }
+  background-color: white; }
 
 .about-page {
   width: 100%;
@@ -564,17 +601,33 @@ a:hover {
 
 .about-page__biography {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 75%; }
+  padding: 0 50px;
+  width: 70%;
+  height: 60%; }
+  .about-page__biography p {
+    font-size: 16px; }
 
 @media (max-width: 900px) {
   #about {
-    width: 100%; } }
+    width: 100%; }
+  .about-page__header h2 {
+    margin-top: 10px; } }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  #about {
+    height: 100%; }
+  .about-page__biography {
+    padding: 0 10px; } }
+
 #contact {
   height: 100vh;
   width: 86%;
@@ -611,7 +664,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center; }
   .contact-page__mainContent .contact-page__emailInfo {
-    width: 350px;
+    width: 40%;
     text-align: center;
     margin-right: 40px;
     display: -webkit-box;
@@ -625,7 +678,6 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center; }
   .contact-page__mainContent .contact-page__form {
-    width: 350px;
     margin-left: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -633,7 +685,8 @@ a:hover {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    width: 40%; }
     .contact-page__mainContent .contact-page__form h3 {
       text-align: center; }
     .contact-page__mainContent .contact-page__form form {
@@ -661,7 +714,7 @@ a:hover {
       .contact-page__mainContent .contact-page__form form input[type="submit"] {
         background-color: rgba(231, 190, 3, 0.9);
         color: white;
-        font-size: 10px;
+        font-size: 16px;
         border-radius: 4px;
         height: 38px;
         border: none;
@@ -710,16 +763,24 @@ a:hover {
             align-items: center; }
     .contact-page__mainContent .contact-page__emailInfo {
       margin-right: 0; }
+    .contact-page__mainContent h4 {
+      display: none; }
+    .contact-page__mainContent p {
+      display: none; }
     .contact-page__mainContent .contact-page__form {
-      margin-left: 0; }
+      margin-left: 0;
+      width: 80%; }
       .contact-page__mainContent .contact-page__form form textarea {
-        height: 80px; } }
+        height: 160px; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .contact-page__mainContent .contact-page__emailInfo form {
-    width: 50%; } }
+  .sidebar-bottom__icons a i {
+    padding: 0 10px; } }
+
+@media (max-width: 380px) {
+  .contact-page__form form {
+    margin: 0; } }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto; }
