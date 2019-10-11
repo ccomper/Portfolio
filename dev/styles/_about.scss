@@ -1,5 +1,4 @@
 #about {
-    min-height: 100vh;
     width: 86%;
     margin-left: auto;
     display: flex;
@@ -26,10 +25,18 @@
     text-align: center;
     padding: 0 50px;
     width: 70%;
-    height: 60%;
+    padding-bottom: 62px;
     p {
         font-size: 16px;
+        text-align: left;
     }
+}
+.about-page__photo {
+    img {
+        border-radius: 50%;
+        max-width: 35%;
+    }
+   
 }
 
 @media (max-width: 900px) {
