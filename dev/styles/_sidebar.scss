@@ -24,19 +24,25 @@ ul.sidebar-top__listItems {
         }
         a:hover {
             color: white;
+            background-color: rgba(34,34,34, 1);
         }
       }
 }
 .sidebar-bottom__icons {
+    margin-bottom: 15px;
     i {
         font-size: 20px;  
         text-decoration: none;
-        color: #999999;
-        margin-bottom: 15px; 
+        color: #999999; 
+        margin: 0 5px;
         transition: 0.7s;
     }
     a {
         text-decoration: none;
+    }
+    a:hover {
+        color: white;
+        background-color: rgba(34,34,34, 1); 
     }
     i:hover {
         color:white;

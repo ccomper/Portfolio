@@ -188,21 +188,25 @@ ul.sidebar-top__listItems {
     -webkit-transition: 0.7s;
     transition: 0.7s; }
   ul.sidebar-top__listItems li a:hover {
+    color: white;
+    background-color: #222222; }
+
+.sidebar-bottom__icons {
+  margin-bottom: 15px; }
+  .sidebar-bottom__icons i {
+    font-size: 20px;
+    text-decoration: none;
+    color: #999999;
+    margin: 0 5px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+  .sidebar-bottom__icons a {
+    text-decoration: none; }
+  .sidebar-bottom__icons a:hover {
+    color: white;
+    background-color: #222222; }
+  .sidebar-bottom__icons i:hover {
     color: white; }
-
-.sidebar-bottom__icons i {
-  font-size: 20px;
-  text-decoration: none;
-  color: #999999;
-  margin-bottom: 15px;
-  -webkit-transition: 0.7s;
-  transition: 0.7s; }
-
-.sidebar-bottom__icons a {
-  text-decoration: none; }
-
-.sidebar-bottom__icons i:hover {
-  color: white; }
 
 .sidebar-top__logo {
   display: -webkit-box;
@@ -366,7 +370,6 @@ a:hover {
       margin-bottom: 10px; } }
 
 #skills {
-  height: 100vh;
   width: 86%;
   margin-left: auto;
   display: -webkit-box;
@@ -394,7 +397,8 @@ a:hover {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-bottom: 30px; }
   .skills-page__header h2 {
     margin-top: 62px;
     margin-bottom: 20px; }
@@ -411,7 +415,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px; }
+  margin-top: 20px;
+  padding-bottom: 62px; }
   .skills-page__icons i {
     font-size: 100px;
     color: black;
@@ -450,7 +455,9 @@ a:hover {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .skills-page__icons {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+    .skills-page__icons i {
+      width: 35%; } }
 
 #works {
   min-height: 100vh;
@@ -496,7 +503,7 @@ a:hover {
   margin-top: 50px; }
 
 .works-page__exampleImage {
-  padding: 10px;
+  padding: 50px;
   width: 50%; }
   .works-page__exampleImage img {
     border-radius: 4px;
@@ -566,7 +573,6 @@ a.works-page__exampleButton:hover {
     margin-top: 10px; } }
 
 #about {
-  min-height: 100vh;
   width: 86%;
   margin-left: auto;
   display: -webkit-box;
@@ -611,9 +617,14 @@ a.works-page__exampleButton:hover {
   text-align: center;
   padding: 0 50px;
   width: 70%;
-  height: 60%; }
+  padding-bottom: 62px; }
   .about-page__biography p {
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: left; }
+
+.about-page__photo img {
+  border-radius: 50%;
+  max-width: 35%; }
 
 @media (max-width: 900px) {
   #about {
